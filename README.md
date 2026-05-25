@@ -30,4 +30,28 @@ This project is a Pharmacy Data Engineering system that demonstrates:
 
 ## 📂 Project Structure
 
+How to Run the Project
+
+### ✅ Step 1: Install dependencies
+```bash
+pip install -r requirements.txt
+
+Setup PostgreSQL Database:
+
+CREATE DATABASE pharma_database;
+
+Run ETL Pipeline:
+
+python main.py
+
+Run API:
+
+uvicorn api:app --reload
+
+Test API (Postman)
+POST request:
+
+http://127.0.0.1:8000/add-sale?medicine_id=3&quantity=2&price=80
+
+..
 ``
